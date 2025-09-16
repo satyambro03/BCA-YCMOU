@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    background-color: rgb(44, 42, 42);
+}
+
+/* Navbar section */
+.nav {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+    z-index: 1000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.4s ease;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 0 30rem;
+}
+
+.nav .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.nav .logo a:hover {
+    color: #00E676;
+}
+
+.nav .main_list {
+    height: 65px;
+}
+
+.nav .main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav .main_list ul li {
+    width: auto;
+    height: 65px;
+    padding-right: 3rem;
+}
+
+.nav .main_list ul li a {
+    text-decoration: none;
+    color: #c4bbbb;
+    line-height: 65px;
+    font-size: 2.4rem;
+}
+
+.nav .main_list ul li a:hover {
+    color: #00E676;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url('robot.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.navTrigger {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+}
+
+.navTrigger i {
+    background-color: #cac0c0;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+}
+
+.navTrigger.active i:nth-child(1) {
+    transform: translateY(9px) rotate(135deg);
+}
+
+.navTrigger.active i:nth-child(2) {
+    opacity: 0;
+}
+
+.navTrigger.active i:nth-child(3) {
+    transform: translateY(-9px) rotate(135deg);
+}
+
+.affix {
+    padding: 0;
+    background-color: #111;
+}
+
+.myH2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.whatsapp {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 60px;
+    border-radius: 5px;
+}
+
+.whatsapp ion-icon {
+    font-size: 20px;
+    color: #16e343;
+}
+
+.phone-number {
+    font-size: 20px;
+    color: #e8dada;
+}
+
+/*END of whatsapp styles*/
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 60px;
+    border-radius: 5px;
+}
+
+.email ion-icon {
+    font-size: 35px;
+    color: #ff5722;
+}
+
+.mail {
+    font-size: 20px;
+    color: rgb(228, 228, 228);
+    text-emphasis: none;
+    text-decoration: none;
+}
+
+/*End of Email styles*/
+
+.linkelden {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 60px;
+    border-radius: 5px;
+}
+
+.linkelden ion-icon {
+    font-size: 20px;
+    color: #1b98dc;
+}
+
+.lund-id {
+    font-size: 20px;
+    color: rgb(228, 228, 228);
+}
+
+@media screen and (max-width: 768px) {
+    .navTrigger {
+        display: block;
+    }
+
+    .nav .main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+
+    .nav .show_list {
+        height: auto;
+    }
+
+    .nav .main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #111;
+        background-position: center top;
+    }
+
+    .nav .main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+
+    .nav .main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
+    }
+
+    .home {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("mobile-robot.jpg");
+    }
+
+    .myP {
+        margin-top: auto;
+        text-align: center;
+    }
+
+    .whatsapp ion-icon {
+        font-size: 20px;
+        color: #16e343;
+    }
+
+    .phone-number {
+        font-size: 20px;
+    }
+
+    .email ion-icon {
+        font-size: 20px;
+    }
+
+    .email {
+        gap: 2px;
+    }
+
+    .mail {
+        font-size: 17px;
+    }
+
+    .linkelden ion-icon {
+        font-size: 25px;
+    }
+
+    .lund-id {
+        font-size: 15px;
+    }
+}

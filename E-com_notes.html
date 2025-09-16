@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="books.css">
+    <link rel="stylesheet" href="sems-nav-bar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Notes of BCA YCMOU</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7SN5YGJP14"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7SN5YGJP14');
+    </script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 80%;
+            margin-top: 160px;
+        }
+
+        .link-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .link-container p {
+            font-size: 25px;
+            margin: 0;
+            font-weight: bold;
+            color: black;
+        }
+
+        .link-container div {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .link-container a {
+            margin-left: 40px;
+            /* Space between the buttons */
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .link-container a:first-child {
+            margin-left: 0;
+            /* Remove left margin from the first button */
+        }
+
+        .link-container a:hover {
+            background-color: #0056b3;
+        }
+
+        .link-container a.view {
+            background-color: #28a745;
+        }
+
+        .link-container a.download {
+            background-color: #dc3545;
+        }
+
+        @media (max-width: 650px) {
+            .link-container p {
+                font-size: 15px;
+            }
+
+            .link-container a {
+                padding: 8px 16px;
+                /* Adjust the padding for smaller screens */
+                font-size: 14px;
+                /* Adjust the font size for smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo"></div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="books.html">E-Books</a></li>
+                    <li><a href="question_papers.html">Question Papers</a></li>
+                    <li><a href="practicals.html">Practicals</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <script>
+        document
+            .querySelector(".navTrigger")
+            .addEventListener("click", function () {
+                document.querySelector(".nav").classList.toggle("active");
+            });
+    </script>
+
+    <div class="content">
+        <div class="link-container">
+            <p>Unit 1 ( Introduction )</p>
+            <div>
+                <a href="https://notebook.zohopublic.in/public/notes/dcr5zee3e0f31f9d54bcaa0d07efa3b30dc84"
+                    class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 2 ( Marketing )</p>
+            <div>
+                <a href="https://notebook.zohopublic.in/public/notes/dcr5z8be7d1a7aa624739bc8b582538d58bda"
+                    class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 3 ( Security )</p>
+            <div>
+                <a href="https://notebook.zohopublic.in/public/notes/dcr5z5f2b35841df140408929322f5491ad80"
+                    class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 4 ( Payment Systems )</p>
+            <div>
+                <a href="https://notebook.zohopublic.in/public/notes/dcr5z9f35d94143c74011b7cf9e0d311793b6"
+                    class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 5 ( Customer Relationship Management )</p>
+            <div>
+                <a href="https://notebook.zohopublic.in/public/notes/dcr5z8756565187a84a2c87fdaf4a849188ee"
+                    class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 6 ( Supply Chain Management )</p>
+            <div>
+                <a href="https://notebook.zohopublic.in/public/notes/dcr5z21f0ba06f21b4fef91f6de33d25ea9dc"
+                    class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 7 ( Stratergy )</p>
+            <div>
+                <a href="https://notebook.zohopublic.in/public/notes/dcr5z8ff00d2c3a8a4cb1a80a2958687cd491"
+                    class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 8 ( Mobile Commerce )</p>
+            <div>
+                <a href="https://notebook.zohopublic.in/public/notes/dcr5zd676907c2dab46749625feb31efddcc7"
+                    class="view">View</a>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

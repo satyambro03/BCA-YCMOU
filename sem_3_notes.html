@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="books.css">
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+
+
+        <style>
+
+body {
+  background: linear-gradient(to right, #ffffff, #ffffff); /* Adjust gradient colors */
+  background-image: url('trial-2.jpg');
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
+        </style>
+
+    </head>
+    <body>
+
+        <!-- Navigation Bar -->
+    
+        <div class="nav">
+            <a href="about.html" onclick="goAbout()">About</a>
+            <a href="index.html" onclick="goNotes()">Notes</a>
+            <a href="books.html" onclick="loadEbooks()">Ebooks</a>
+            <div class="dropdown" onclick="toggleDropdown()">
+                <a href="#">Resources</a>
+                <div class="dropdown-content" id="resourcesDropdown">
+                    <a href="question_papers.html">Question Papers</a>
+                    <a href="practicals.html">Practicals</a>
+
+                </div>
+            </div>
+        </div>
+
+        </body>
+        </html>

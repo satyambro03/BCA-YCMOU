@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+}
+
+/* Video Background Section */
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Button Section */
+
+.button {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #006400;
+    border-radius: 8px;
+    margin: 40px 40px;
+    font-size: 1.5rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #008000;
+    transform: scale(1.05);
+}
+
+/* Container Section */
+
+.container-books {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+/* Navbar Section */
+
+.nav {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    line-height: 65px;
+    text-align: center;
+    z-index: 1000;
+    transition: all 0.4s ease;
+    padding: 0;
+    background-color: transparent;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.nav .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.nav .logo a:hover {
+    color: #00E676;
+}
+
+.nav .main_list {
+    height: 65px;
+}
+
+.nav .main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav .main_list ul li {
+    width: auto;
+    height: 65px;
+    padding-right: 3rem;
+}
+
+.nav .main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    font-size: 2.4rem;
+}
+
+.nav .main_list ul li a:hover {
+    color: #00E676;
+}
+
+.navTrigger {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1001;
+}
+
+.navTrigger i {
+    background-color: #fff;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+}
+
+.navTrigger.active i:nth-child(1) {
+    transform: translateY(9px) rotate(135deg);
+}
+
+.navTrigger.active i:nth-child(2) {
+    opacity: 0;
+}
+
+.navTrigger.active i:nth-child(3) {
+    transform: translateY(-9px) rotate(135deg);
+}
+
+.affix {
+    padding: 0;
+    background-color: #e32020;
+}
+
+/* Typography Section */
+
+.myH2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.myP {
+    text-align: justify;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 20px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .container-books {
+        padding: 40px 20px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        margin: 10px 5px;
+    }
+
+    .navTrigger {
+        display: block;
+    }
+
+    .nav .main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+
+    .nav.active .main_list {
+        height: 325px; /* Set height according to the number of menu items */
+    }
+
+    .nav .main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-color: #bcb6b6;
+        background-position: left;
+    }
+
+    .nav .main_list ul li {
+        width: 100%;
+        text-align: center;
+        padding: 3px 3px; /* Adjusted padding */
+    }
+
+    .nav .main_list ul li a {
+        width: 100%;
+        font-size: 15px; /* Adjusted font size */
+        padding: 5px; /* Adjusted padding */
+    }
+}
+
+@media (max-width: 700px) {
+    .myP {
+        padding: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-books {
+        padding: 40px 20px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        margin: 10px 5px;
+    }
+
+    .navTrigger {
+        display: block;
+    }
+
+    .nav .main_list {
+        width: 50%; /* Adjusted width of the menu container */
+        max-width: 300px; /* Added maximum width for responsiveness */
+        height: 100%; /* Adjusted height to cover the full screen */
+        overflow-y: auto; /* Added to enable vertical scrolling if needed */
+        position: fixed; /* Changed to fixed positioning */
+        top: 0; /* Adjusted positioning to align with the top */
+        right: 0; /* Positioned from the right side */
+        z-index: 1001; /* Increased z-index to ensure it overlays other content */
+        transform: translateX(100%); /* Initially hide the menu off-screen */
+        transition: transform 0.5s ease; /* Added smooth transition for animation */
+    }
+
+    .nav.active .main_list {
+        transform: translateX(0); /* Slide the menu into view from the right */
+    }
+
+    .nav .main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .nav .main_list ul li {
+        width: 100%;
+        text-align: center;
+        padding: 0px 0; /* Reduced vertical padding */
+    }
+
+    .nav .main_list ul li a {
+        width: 100%;
+        font-size: 20px; /* Adjusted font size */
+        padding: 10px; /* Adjusted padding */
+        display: block; /* Added to make the links fill the container */
+        color:black;
+        font-weight: bold;
+
+    }
+}
