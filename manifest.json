@@ -1,0 +1,33 @@
+{
+  "name": "BCA Learning Portal",
+  "short_name": "BCA Portal",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#1DA88A",
+  "background_color": "#ffffff",
+  "description": "Bachelor of Computer Application Learning Portal",
+  "icons": [
+    {
+      "src": "/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "orientation": "any",
+  "categories": ["education", "learning"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "url": "/",
+      "icons": [{ "src": "/images/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
